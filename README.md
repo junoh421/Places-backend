@@ -1,6 +1,6 @@
 # Places-backend
 
-Tasks:
+##Tasks:
 - Rails setup
 - Postgres setup
 - User authentication (Omniauth/Instagram)
