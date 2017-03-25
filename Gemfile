@@ -1,13 +1,18 @@
 source 'https://rubygems.org/'
 
+ruby '2.4.0'
+
 gem 'rails'
 gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
+gem 'devise'
+gem 'omniauth-facebook'
+gem 'dotenv-rails'
 group :development, :test do
   gem 'capybara'
-  gem 'capybara-webkit', '~> 1.11.1'
+  gem 'capybara-webkit'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'pry-rails'
