@@ -8,6 +8,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'devise'
+gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'dotenv-rails'
 group :development, :test do

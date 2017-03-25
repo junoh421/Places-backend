@@ -237,6 +237,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   listen
+  omniauth
   omniauth-facebook
   pg
   pry-rails
