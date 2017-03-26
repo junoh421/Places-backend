@@ -28,3 +28,5 @@ class User < ApplicationRecord
     end
   end
 end
+
+# curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{ "user": { "first_name": "John", "last_name": "Doe", "username": "test", "email": "test@test.com", "password": "password", "password_confirmation": "password" }}' localhost:3000/users
