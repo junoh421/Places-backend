@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20170325013713) do
     t.string   "uid"
     t.string   "profile_photo"
     t.string   "facebook_photo"
+    t.string   "remember_digest"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree

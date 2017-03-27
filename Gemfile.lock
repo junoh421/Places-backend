@@ -230,6 +230,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   capybara
   capybara-webkit
   devise
