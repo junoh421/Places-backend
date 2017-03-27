@@ -11,6 +11,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'dotenv-rails'
+gem 'rack-cors', require: 'rack/cors'
+gem 'bcrypt'
 group :development, :test do
   gem 'capybara'
   gem 'capybara-webkit'

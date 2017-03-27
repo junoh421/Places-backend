@@ -39,6 +39,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :profile_photo
       t.string :facebook_photo
 
+      # persistent login
+      t.string :remember_digest
+
       t.timestamps null: false
     end
 

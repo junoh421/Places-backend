@@ -6,7 +6,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       @user.increment! :sign_in_count
       @user.touch :last_sign_in_at
       sign_in @user, event: :authentication #this will throw if @user is not activated
-      render json: { msg: 'Sucessfully authenticated.' }
+      render json: { msg: 'Sucessfully authenticated.', user: @user.email }
     else
       session['oauth_data'] = request.env['omniauth.auth']
       render json: { msg: 'Saved Oauth data to session.' }
@@ -15,8 +15,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def self.new_with_session(params, session)
     super.tap do |user|
-      if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
-        user.email = data["email"] if user.email.blank?
+      if data = session['devise.facebook_data'] && session['devise.facebook_data']['extra']['raw_info']
+        user.email = data['email'] if user.email.blank?
       end
     end
   end

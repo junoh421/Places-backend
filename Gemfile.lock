@@ -132,6 +132,7 @@ GEM
       pry (>= 0.9.10)
     public_suffix (2.0.5)
     rack (2.0.1)
+    rack-cors (0.4.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.2)
@@ -229,6 +230,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   capybara
   capybara-webkit
   devise
@@ -241,6 +243,7 @@ DEPENDENCIES
   omniauth-facebook
   pg
   pry-rails
+  rack-cors
   rails
   rails_12factor
   rspec-rails
