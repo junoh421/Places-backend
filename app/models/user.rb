@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
+  has_many :friendships
+  has_many :friends, :through => :friendships, :source => :user
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
